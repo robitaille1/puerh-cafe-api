@@ -8,7 +8,7 @@ const collectionRouter = express.Router()
 const serializeCollection = collection => ({
     id: collection.id,
     name: collection.name,
-    userId: collection.userid
+    userid: collection.userid
 })
 
 collectionRouter

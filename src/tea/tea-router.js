@@ -12,7 +12,8 @@ const serializeTea = tea => ({
     vendor: tea.vendor,
     quantity: tea.quantity,
     cost: tea.cost,
-    collectionId: tea.collectionid
+    link: tea.link,
+    collectionid: tea.collectionid
 })
 
 teaRouter

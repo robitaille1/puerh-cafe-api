@@ -8,7 +8,7 @@ const sessionRouter = express.Router()
 const serializeSession = session => ({
     id: session.id,
     name: session.name,
-    teaId: session.userid,
+    teaid: session.teaid,
     quantity: session.quantity,
     parameters: session.parameters,
     notes: session.notes,
