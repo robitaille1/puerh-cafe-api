@@ -1,7 +1,6 @@
 const path = require('path')
 const express = require('express')
 const CollectionService = require('./collection-service')
-// const { requireAuth } = require('../middleware/basic-auth')
 
 const collectionRouter = express.Router()
 const jsonParser = express.json()
@@ -14,7 +13,6 @@ const serializeCollection = collection => ({
 
 collectionRouter
     .route('/')
-    // .all(requireAuth)
     .get((req, res, next) => {
         const knexInstance = req.app.get('db')
         CollectionService.getAllCollections(knexInstance)
